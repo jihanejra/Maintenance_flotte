@@ -1,0 +1,14 @@
+.venv
+.git
+**/__pycache__
+.pytest_cache
+.ruff_cache
+data/raw
+data/interim
+data/processed/features_*.parquet
+models
+mlflow.db
+mlruns
+notebooks
+docs
+tests

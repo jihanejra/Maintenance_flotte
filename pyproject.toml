@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fleet-maintenance-cockpit"
+version = "0.1.0"
+description = "Cockpit d'aide à la décision pour la maintenance d'une flotte de camions (données SCANIA Component X)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "pyarrow>=15",
+    "polars>=1.0",
+    "pyyaml>=6",
+    "requests>=2.31",
+    "tqdm>=4.66",
+    "pandera>=0.20",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "jupyter", "nbformat", "nbconvert", "python-docx>=1.1"]
+model = ["scikit-survival>=0.23", "xgboost>=2.0", "lightgbm>=4.0", "mlflow>=3.0", "joblib"]
+deep = ["torch>=2.2"]   # version CPU : pip install torch --index-url https://download.pytorch.org/whl/cpu
+app = ["fastapi>=0.110", "uvicorn[standard]>=0.29", "streamlit>=1.35", "altair>=5", "httpx"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["data: tests qui nécessitent les données téléchargées"]

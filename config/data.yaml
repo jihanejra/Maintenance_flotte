@@ -1,0 +1,38 @@
+# Source officielle : Swedish National Data Service, DOI 10.5878/jvb5-d390 (licence CC BY 4.0)
+source:
+  doi: "10.5878/jvb5-d390"
+  base_url: "https://api.researchdata.se/dataset/2024-34/2/file/data"
+  files:
+    - train_operational_readouts.csv
+    - train_tte.csv
+    - train_specifications.csv
+    - validation_operational_readouts.csv
+    - validation_labels.csv
+    - validation_specifications.csv
+    - test_operational_readouts.csv
+    - test_labels.csv
+    - test_specifications.csv
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  figures: reports/figures
+
+# Classes officielles du challenge : temps restant avant réparation (en time_step)
+# classe 0 : > 48 ; 1 : ]24, 48] ; 2 : ]12, 24] ; 3 : ]6, 12] ; 4 : [0, 6]
+label_bins: [6, 12, 24, 48]
+
+# Construction des échantillons d'entraînement (imitation du format validation/test)
+sampling:
+  cutoffs_per_vehicle: 5      # nombre d'instants de coupure tirés par camion
+  min_readouts: 2             # au moins 2 relevés avant la coupure (pour calculer un rythme)
+  seed: 42
+  # uniform : coupure uniforme parmi les relevés ;
+  # match_validation_age : âge des coupures calé sur celui des coupures de validation
+  # (le tirage uniforme donne des coupures trop jeunes et un faux signal d'âge, voir le rapport EDA)
+  strategy: match_validation_age
+  age_bin_width: 20
+
+features:
+  slope_window: 5             # nombre de derniers relevés pour les pentes

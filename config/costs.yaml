@@ -1,0 +1,67 @@
+# Hypothèses économiques et d'atelier.
+# Rien de ceci n'est dans le dataset : chaque valeur est une hypothèse documentée, modifiable ici
+# ou depuis le tableau de bord, et soumise à une analyse de sensibilité.
+
+# Matrice de coûts officielle du challenge IDA 2024 (unités du challenge, pas des euros).
+# Ligne = vraie classe (0..4), colonne = classe prédite (0..4).
+challenge_cost_matrix:
+  - [0,   7,   8,   9,  10]
+  - [200, 0,   7,   8,   9]
+  - [300, 200, 0,   7,   8]
+  - [400, 300, 200, 0,   7]
+  - [500, 400, 300, 200, 0]
+
+# Conversion du temps (hypothèse forte) : l'unité "time_step" n'est pas publiée.
+# 1 time_step ≈ 1 semaine donne un suivi médian de ~4 ans et un relevé tous les ~1 mois,
+# ordres de grandeur plausibles pour des camions sous contrat de maintenance.
+time:
+  days_per_time_step: 7
+  working_days_per_week: 5
+
+# Coûts en euros (ordres de grandeur pour un poids lourd ; à remplacer par les vrais coûts)
+economics:
+  part_cost: 1500                # composant X neuf
+  preventive_labour: 400         # remplacement planifié (main d'œuvre)
+  inspection_cost: 150           # contrôle d'atelier sans remplacement (fausse alerte)
+  breakdown_labour: 1500         # réparation après panne (main d'œuvre majorée, urgence)
+  towing_cost: 1200              # dépannage et remorquage sur route
+  customer_penalty: 1500         # livraison manquée, pénalités, marchandise
+  downtime_cost_per_day: 800     # camion + chauffeur immobilisés, location de remplacement
+  downtime_days_inspection: 0.25 # immobilisation pour un contrôle
+  downtime_days_replacement: 0.5 # immobilisation pour un remplacement planifié
+  downtime_days_breakdown: 5     # immobilisation après une panne (hors attente d'atelier)
+
+# Atelier (décision opérationnelle et simulation stratégique)
+workshop:
+  bays: 3                        # baies capables d'intervenir sur le composant X
+  slots_per_bay_per_day: 2       # interventions de ~4 h
+  certified_technicians: 3       # techniciens qualifiés composant X
+  technician_hours_per_day: 7.5
+  intervention_hours: 3.5
+  parts_in_stock: 15             # pièces disponibles cette semaine
+  truck_availability: 0.7        # probabilité qu'un camion soit disponible un jour donné
+  risk_horizon: 6                # pas de temps : fenêtre de risque couverte par l'intervention
+
+# Pièces de rechange (décision tactique)
+parts:
+  lead_time_weeks: 2             # délai de réapprovisionnement
+  holding_rate_per_year: 0.25    # coût de possession annuel en % de la valeur de la pièce
+  stockout_extra_days: 5         # immobilisation supplémentaire si la pièce manque
+  express_shipping: 300          # surcoût de livraison urgente par pièce manquante
+  review_period_weeks: 4         # commande mensuelle
+
+staffing:
+  service_level: 0.95            # part des semaines sans débordement visée
+  hours_per_technician_week: 35
+
+# Simulation stratégique (Monte-Carlo)
+strategy:
+  fleet_size: 5000
+  years: 5
+  replications: 10
+  seed: 7
+  predictive_setup_cost: 80000          # mise en place (intégration des données, outil)
+  predictive_cost_per_truck_year: 50    # analyse des données télématiques déjà collectées, exploitation
+  extra_bay_capex: 150000               # investissement par baie supplémentaire
+  extra_bay_cost_per_year: 60000        # technicien et frais fixes par baie supplémentaire
+  preventive_intervals: [150, 200, 300, 400, 500, 700]  # âges de remplacement testés (pas)

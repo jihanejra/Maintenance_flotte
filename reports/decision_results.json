@@ -1,0 +1,1335 @@
+{
+  "unit_costs": {
+    "breakdown": 9700,
+    "replacement": 2300.0,
+    "inspection": 350.0,
+    "downtime_day": 800
+  },
+  "threshold": 0.04516129032258064,
+  "strategy_fleet": 5000,
+  "strategy_reps": 10,
+  "setup_cost": 80000,
+  "operational": {
+    "n_fleet": 5045,
+    "n_profitable": 192,
+    "threshold": 0.04516129032258064,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "n_candidates": 192,
+    "n_scheduled": 15,
+    "expected_saving": 10374.250207890691,
+    "slots_used_per_day": [
+      6,
+      6,
+      3,
+      0,
+      0
+    ],
+    "slots_per_day": 6,
+    "unserved_profitable": 177,
+    "binding": [
+      "pi\u00e8ces en stock",
+      "cr\u00e9neaux de baies",
+      "heures de techniciens"
+    ],
+    "schedule_head": [
+      {
+        "vehicle_id": 10479,
+        "jour": "lundi",
+        "jour_idx": 0,
+        "proba_panne_fenetre": 0.341668448314718,
+        "proba_panne_semaine": 0.024152441874895958,
+        "gain_attendu": 2297.9304744390643
+      },
+      {
+        "vehicle_id": 24705,
+        "jour": "lundi",
+        "jour_idx": 0,
+        "proba_panne_fenetre": 0.268330289005303,
+        "proba_panne_semaine": 0.024152441874895958,
+        "gain_attendu": 1729.5597397910983
+      },
+      {
+        "vehicle_id": 10841,
+        "jour": "lundi",
+        "jour_idx": 0,
+        "proba_panne_fenetre": 0.2664208610085489,
+        "proba_panne_semaine": 0.024152441874895958,
+        "gain_attendu": 1714.7616728162538
+      },
+      {
+        "vehicle_id": 25924,
+        "jour": "lundi",
+        "jour_idx": 0,
+        "proba_panne_fenetre": 0.07931334450368599,
+        "proba_panne_semaine": 0.024152441874895958,
+        "gain_attendu": 264.67841990356646
+      },
+      {
+        "vehicle_id": 13657,
+        "jour": "lundi",
+        "jour_idx": 0,
+        "proba_panne_fenetre": 0.056875114313770125,
+        "proba_panne_semaine": 0.012144911452767415,
+        "gain_attendu": 90.78213593171847
+      },
+      {
+        "vehicle_id": 3106,
+        "jour": "lundi",
+        "jour_idx": 0,
+        "proba_panne_fenetre": 0.056875114313770125,
+        "proba_panne_semaine": 0.012144911452767415,
+        "gain_attendu": 90.78213593171847
+      },
+      {
+        "vehicle_id": 25149,
+        "jour": "mardi",
+        "jour_idx": 1,
+        "proba_panne_fenetre": 0.341668448314718,
+        "proba_panne_semaine": 0.024152441874895958,
+        "gain_attendu": 2260.4941895329757
+      },
+      {
+        "vehicle_id": 29171,
+        "jour": "mardi",
+        "jour_idx": 1,
+        "proba_panne_fenetre": 0.268330289005303,
+        "proba_panne_semaine": 0.024152441874895958,
+        "gain_attendu": 1692.1234548850096
+      },
+      {
+        "vehicle_id": 11484,
+        "jour": "mardi",
+        "jour_idx": 1,
+        "proba_panne_fenetre": 0.056875114313770125,
+        "proba_panne_semaine": 0.012144911452767415,
+        "gain_attendu": 71.95752317992898
+      },
+      {
+        "vehicle_id": 15162,
+        "jour": "mardi",
+        "jour_idx": 1,
+        "proba_panne_fenetre": 0.056875114313770125,
+        "proba_panne_semaine": 0.012144911452767415,
+        "gain_attendu": 71.95752317992898
+      },
+      {
+        "vehicle_id": 22686,
+        "jour": "mardi",
+        "jour_idx": 1,
+        "proba_panne_fenetre": 0.056875114313770125,
+        "proba_panne_semaine": 0.012144911452767415,
+        "gain_attendu": 71.95752317992898
+      },
+      {
+        "vehicle_id": 16406,
+        "jour": "mardi",
+        "jour_idx": 1,
+        "proba_panne_fenetre": 0.04772725390873278,
+        "proba_panne_semaine": 0.005740042032369885,
+        "gain_attendu": 10.989152642505754
+      },
+      {
+        "vehicle_id": 11489,
+        "jour": "mercredi",
+        "jour_idx": 2,
+        "proba_panne_fenetre": 0.04772725390873278,
+        "proba_panne_semaine": 0.005740042032369885,
+        "gain_attendu": 2.092087492332432
+      },
+      {
+        "vehicle_id": 19591,
+        "jour": "mercredi",
+        "jour_idx": 2,
+        "proba_panne_fenetre": 0.04772725390873278,
+        "proba_panne_semaine": 0.005740042032369885,
+        "gain_attendu": 2.092087492332432
+      },
+      {
+        "vehicle_id": 1641,
+        "jour": "mercredi",
+        "jour_idx": 2,
+        "proba_panne_fenetre": 0.04772725390873278,
+        "proba_panne_semaine": 0.005740042032369885,
+        "gain_attendu": 2.092087492332432
+      }
+    ],
+    "bays_sensitivity": [
+      {
+        "bays": 1,
+        "scheduled": 10,
+        "saving": 9909.386776945435
+      },
+      {
+        "bays": 2,
+        "scheduled": 12,
+        "saving": 10264.953816504576
+      },
+      {
+        "bays": 3,
+        "scheduled": 18,
+        "saving": 10380.526470367691
+      },
+      {
+        "bays": 4,
+        "scheduled": 24,
+        "saving": 10456.388933824343
+      },
+      {
+        "bays": 5,
+        "scheduled": 30,
+        "saving": 10522.323849679377
+      },
+      {
+        "bays": 6,
+        "scheduled": 36,
+        "saving": 10588.25876553441
+      }
+    ]
+  },
+  "figures": {
+    "operational": "reports/figures/31_workshop_plan.png",
+    "performance_grid": "reports/figures/36_required_performance.png",
+    "strategic": "reports/figures/33_strategic_scenarios.png",
+    "strategic_ops": "reports/figures/34_strategic_operations.png",
+    "sensitivity": "reports/figures/35_breakdown_cost_sensitivity.png",
+    "tactical": "reports/figures/32_parts_staffing.png"
+  },
+  "strategic": {
+    "failure_law": {
+      "k": 3.80038528971211,
+      "lam": 387.7669994709576,
+      "theta": 11.414230267158223
+    },
+    "predictive_rates": {
+      "recall": 0.2631578947368421,
+      "fpr_per_check": 0.05784114052953157,
+      "weekly_false_alarm": 0.011878897965170549,
+      "readout_gap": 4.869234561920166,
+      "cooldown": 5,
+      "threshold": 0.04516129032258064
+    },
+    "preventive_grid": [
+      {
+        "interval": 150,
+        "cost_per_truck_year": 823.7160000000001,
+        "breakdowns_per_100_truck_years": 1.434
+      },
+      {
+        "interval": 200,
+        "cost_per_truck_year": 760.219,
+        "breakdowns_per_100_truck_years": 1.7939999999999998
+      },
+      {
+        "interval": 300,
+        "cost_per_truck_year": 632.406,
+        "breakdowns_per_100_truck_years": 3.169
+      },
+      {
+        "interval": 400,
+        "cost_per_truck_year": 528.361,
+        "breakdowns_per_100_truck_years": 4.164
+      },
+      {
+        "interval": 500,
+        "cost_per_truck_year": 460.879,
+        "breakdowns_per_100_truck_years": 4.394
+      },
+      {
+        "interval": 700,
+        "cost_per_truck_year": 432.24,
+        "breakdowns_per_100_truck_years": 4.453
+      }
+    ],
+    "best_interval": 700,
+    "scenarios": [
+      {
+        "policy": "corrective",
+        "bays": 3,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 1087.4,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 5437.0,
+        "cost": 10547780.0,
+        "slots_used": 1087.4,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 421.9112,
+        "breakdowns_per_100_truck_years": 4.349600000000001,
+        "downtime_days_per_truck_year": 0.21747999999999998,
+        "utilization": 0.13941025641025642,
+        "cost_per_truck_year_sd": 12.307859056716572,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "preventive",
+        "bays": 3,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 1087.3,
+        "replacements": 3.8,
+        "inspections": 0.0,
+        "downtime_days": 5438.4,
+        "cost": 10555550.0,
+        "slots_used": 1091.1,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 422.22200000000004,
+        "breakdowns_per_100_truck_years": 4.3492,
+        "downtime_days_per_truck_year": 0.217536,
+        "utilization": 0.1398846153846154,
+        "cost_per_truck_year_sd": 12.274216520821204,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "predictive",
+        "bays": 3,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 973.1,
+        "replacements": 119.3,
+        "inspections": 6707.6,
+        "downtime_days": 6602.05,
+        "cost": 12061120.0,
+        "slots_used": 7800.0,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 482.44480000000004,
+        "breakdowns_per_100_truck_years": 3.8924,
+        "downtime_days_per_truck_year": 0.26408200000000004,
+        "utilization": 1.0,
+        "cost_per_truck_year_sd": 11.840089026692334,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "oracle",
+        "bays": 3,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 4.1,
+        "replacements": 1120.3,
+        "inspections": 0.0,
+        "downtime_days": 580.65,
+        "cost": 2616460.0,
+        "slots_used": 1124.4,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 104.6584,
+        "breakdowns_per_100_truck_years": 0.016400000000000005,
+        "downtime_days_per_truck_year": 0.023226,
+        "utilization": 0.14415384615384613,
+        "cost_per_truck_year_sd": 3.0733373130849153,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "corrective",
+        "bays": 4,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 1087.4,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 5437.0,
+        "cost": 10547780.0,
+        "slots_used": 1087.4,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 421.9112,
+        "breakdowns_per_100_truck_years": 4.349600000000001,
+        "downtime_days_per_truck_year": 0.21747999999999998,
+        "utilization": 0.1045576923076923,
+        "cost_per_truck_year_sd": 12.307859056716572,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "preventive",
+        "bays": 4,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 1087.3,
+        "replacements": 3.8,
+        "inspections": 0.0,
+        "downtime_days": 5438.4,
+        "cost": 10555550.0,
+        "slots_used": 1091.1,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 422.22200000000004,
+        "breakdowns_per_100_truck_years": 4.3492,
+        "downtime_days_per_truck_year": 0.217536,
+        "utilization": 0.10491346153846152,
+        "cost_per_truck_year_sd": 12.274216520821204,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "predictive",
+        "bays": 4,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 923.2,
+        "replacements": 165.7,
+        "inspections": 9310.6,
+        "downtime_days": 7026.5,
+        "cost": 12594860.0,
+        "slots_used": 10399.5,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 503.79440000000005,
+        "breakdowns_per_100_truck_years": 3.6928000000000005,
+        "downtime_days_per_truck_year": 0.28106,
+        "utilization": 0.999951923076923,
+        "cost_per_truck_year_sd": 12.463331009003971,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "oracle",
+        "bays": 4,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 4.0,
+        "replacements": 1122.2,
+        "inspections": 0.0,
+        "downtime_days": 581.1,
+        "cost": 2619860.0,
+        "slots_used": 1126.2,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 104.7944,
+        "breakdowns_per_100_truck_years": 0.016000000000000004,
+        "downtime_days_per_truck_year": 0.023244,
+        "utilization": 0.10828846153846154,
+        "cost_per_truck_year_sd": 3.245084504292609,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "corrective",
+        "bays": 5,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 1087.4,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 5437.0,
+        "cost": 10547780.0,
+        "slots_used": 1087.4,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 421.9112,
+        "breakdowns_per_100_truck_years": 4.349600000000001,
+        "downtime_days_per_truck_year": 0.21747999999999998,
+        "utilization": 0.08364615384615386,
+        "cost_per_truck_year_sd": 12.307859056716572,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "preventive",
+        "bays": 5,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 1087.3,
+        "replacements": 3.8,
+        "inspections": 0.0,
+        "downtime_days": 5438.4,
+        "cost": 10555550.0,
+        "slots_used": 1091.1,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 422.22200000000004,
+        "breakdowns_per_100_truck_years": 4.3492,
+        "downtime_days_per_truck_year": 0.217536,
+        "utilization": 0.08393076923076924,
+        "cost_per_truck_year_sd": 12.274216520821204,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "predictive",
+        "bays": 5,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 902.0,
+        "replacements": 194.2,
+        "inspections": 11844.2,
+        "downtime_days": 7568.15,
+        "cost": 13341530.0,
+        "slots_used": 12940.4,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 533.6611999999999,
+        "breakdowns_per_100_truck_years": 3.6079999999999997,
+        "downtime_days_per_truck_year": 0.30272600000000005,
+        "utilization": 0.9954153846153847,
+        "cost_per_truck_year_sd": 12.996991750401339,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "oracle",
+        "bays": 5,
+        "fleet_age_shift": 0,
+        "interval": 700,
+        "breakdowns": 4.0,
+        "replacements": 1122.2,
+        "inspections": 0.0,
+        "downtime_days": 581.1,
+        "cost": 2619860.0,
+        "slots_used": 1126.2,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 104.7944,
+        "breakdowns_per_100_truck_years": 0.016000000000000004,
+        "downtime_days_per_truck_year": 0.023244,
+        "utilization": 0.08663076923076923,
+        "cost_per_truck_year_sd": 3.245084504292609,
+        "fleet": "actuelle"
+      },
+      {
+        "policy": "corrective",
+        "bays": 3,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 1482.8,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 7414.0,
+        "cost": 14383160.0,
+        "slots_used": 1482.8,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 575.3264,
+        "breakdowns_per_100_truck_years": 5.9312000000000005,
+        "downtime_days_per_truck_year": 0.29656000000000005,
+        "utilization": 0.19010256410256407,
+        "cost_per_truck_year_sd": 14.888081267913599,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "preventive",
+        "bays": 3,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 1481.4,
+        "replacements": 63.3,
+        "inspections": 0.0,
+        "downtime_days": 7438.65,
+        "cost": 14515170.0,
+        "slots_used": 1544.7,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 580.6068000000001,
+        "breakdowns_per_100_truck_years": 5.9256,
+        "downtime_days_per_truck_year": 0.297546,
+        "utilization": 0.19803846153846155,
+        "cost_per_truck_year_sd": 14.069224632509085,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "predictive",
+        "bays": 3,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 1344.0,
+        "replacements": 144.6,
+        "inspections": 6311.4,
+        "downtime_days": 8370.15,
+        "cost": 15578370.0,
+        "slots_used": 7800.0,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 623.1348,
+        "breakdowns_per_100_truck_years": 5.376,
+        "downtime_days_per_truck_year": 0.33480600000000005,
+        "utilization": 1.0,
+        "cost_per_truck_year_sd": 11.65795475029817,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "oracle",
+        "bays": 3,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 26.4,
+        "replacements": 1495.9,
+        "inspections": 0.0,
+        "downtime_days": 879.95,
+        "cost": 3696650.0,
+        "slots_used": 1522.3,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 147.86599999999999,
+        "breakdowns_per_100_truck_years": 0.1056,
+        "downtime_days_per_truck_year": 0.03519799999999999,
+        "utilization": 0.19516666666666665,
+        "cost_per_truck_year_sd": 4.307756817648831,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "corrective",
+        "bays": 4,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 1482.8,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 7414.0,
+        "cost": 14383160.0,
+        "slots_used": 1482.8,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 575.3264,
+        "breakdowns_per_100_truck_years": 5.9312000000000005,
+        "downtime_days_per_truck_year": 0.29656000000000005,
+        "utilization": 0.14257692307692307,
+        "cost_per_truck_year_sd": 14.888081267913599,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "preventive",
+        "bays": 4,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 1481.4,
+        "replacements": 63.3,
+        "inspections": 0.0,
+        "downtime_days": 7438.65,
+        "cost": 14515170.0,
+        "slots_used": 1544.7,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 580.6068000000001,
+        "breakdowns_per_100_truck_years": 5.9256,
+        "downtime_days_per_truck_year": 0.297546,
+        "utilization": 0.14852884615384615,
+        "cost_per_truck_year_sd": 14.069224632509085,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "predictive",
+        "bays": 4,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 1291.7,
+        "replacements": 200.0,
+        "inspections": 8907.9,
+        "downtime_days": 8785.475,
+        "cost": 16107255.0,
+        "slots_used": 10399.6,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 644.2901999999999,
+        "breakdowns_per_100_truck_years": 5.1668,
+        "downtime_days_per_truck_year": 0.35141900000000004,
+        "utilization": 0.9999615384615386,
+        "cost_per_truck_year_sd": 14.724525919702812,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "oracle",
+        "bays": 4,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 20.4,
+        "replacements": 1502.3,
+        "inspections": 0.0,
+        "downtime_days": 853.15,
+        "cost": 3653170.0,
+        "slots_used": 1522.7,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 146.12680000000003,
+        "breakdowns_per_100_truck_years": 0.0816,
+        "downtime_days_per_truck_year": 0.034126000000000004,
+        "utilization": 0.14641346153846155,
+        "cost_per_truck_year_sd": 4.09406088865322,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "corrective",
+        "bays": 5,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 1482.8,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 7414.0,
+        "cost": 14383160.0,
+        "slots_used": 1482.8,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 575.3264,
+        "breakdowns_per_100_truck_years": 5.9312000000000005,
+        "downtime_days_per_truck_year": 0.29656000000000005,
+        "utilization": 0.11406153846153844,
+        "cost_per_truck_year_sd": 14.888081267913599,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "preventive",
+        "bays": 5,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 1481.4,
+        "replacements": 63.3,
+        "inspections": 0.0,
+        "downtime_days": 7438.65,
+        "cost": 14515170.0,
+        "slots_used": 1544.7,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 580.6068000000001,
+        "breakdowns_per_100_truck_years": 5.9256,
+        "downtime_days_per_truck_year": 0.297546,
+        "utilization": 0.11882307692307692,
+        "cost_per_truck_year_sd": 14.069224632509085,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "predictive",
+        "bays": 5,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 1230.8,
+        "replacements": 257.2,
+        "inspections": 11466.7,
+        "downtime_days": 9149.275,
+        "cost": 16543665.0,
+        "slots_used": 12954.7,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 661.7466000000001,
+        "breakdowns_per_100_truck_years": 4.9232,
+        "downtime_days_per_truck_year": 0.365971,
+        "utilization": 0.9965153846153847,
+        "cost_per_truck_year_sd": 10.049999444776116,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "oracle",
+        "bays": 5,
+        "fleet_age_shift": 100,
+        "interval": 700,
+        "breakdowns": 17.9,
+        "replacements": 1508.4,
+        "inspections": 0.0,
+        "downtime_days": 843.7,
+        "cost": 3642950.0,
+        "slots_used": 1526.3,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 145.718,
+        "breakdowns_per_100_truck_years": 0.0716,
+        "downtime_days_per_truck_year": 0.033748,
+        "utilization": 0.1174076923076923,
+        "cost_per_truck_year_sd": 3.9892332095278675,
+        "fleet": "vieillissante"
+      },
+      {
+        "policy": "corrective",
+        "bays": 3,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 756.5,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 3782.5,
+        "cost": 7338050.0,
+        "slots_used": 756.5,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 293.522,
+        "breakdowns_per_100_truck_years": 3.026,
+        "downtime_days_per_truck_year": 0.15130000000000002,
+        "utilization": 0.09698717948717948,
+        "cost_per_truck_year_sd": 9.642795320860033,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "preventive",
+        "bays": 3,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 756.5,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 3782.5,
+        "cost": 7338050.0,
+        "slots_used": 756.5,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 293.522,
+        "breakdowns_per_100_truck_years": 3.026,
+        "downtime_days_per_truck_year": 0.15130000000000002,
+        "utilization": 0.09698717948717948,
+        "cost_per_truck_year_sd": 9.642795320860033,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "predictive",
+        "bays": 3,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 670.3,
+        "replacements": 82.9,
+        "inspections": 7046.8,
+        "downtime_days": 5154.65,
+        "cost": 9158960.0,
+        "slots_used": 7800.0,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 366.35839999999996,
+        "breakdowns_per_100_truck_years": 2.6811999999999996,
+        "downtime_days_per_truck_year": 0.20618600000000004,
+        "utilization": 1.0,
+        "cost_per_truck_year_sd": 9.428021162470943,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "oracle",
+        "bays": 3,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 0.6,
+        "replacements": 786.2,
+        "inspections": 0.0,
+        "downtime_days": 396.1,
+        "cost": 1814080.0,
+        "slots_used": 786.8,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 7800.0,
+        "cost_per_truck_year": 72.56320000000001,
+        "breakdowns_per_100_truck_years": 0.0024000000000000002,
+        "downtime_days_per_truck_year": 0.015843999999999997,
+        "utilization": 0.10087179487179487,
+        "cost_per_truck_year_sd": 2.4268991243972233,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "corrective",
+        "bays": 4,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 756.5,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 3782.5,
+        "cost": 7338050.0,
+        "slots_used": 756.5,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 293.522,
+        "breakdowns_per_100_truck_years": 3.026,
+        "downtime_days_per_truck_year": 0.15130000000000002,
+        "utilization": 0.07274038461538461,
+        "cost_per_truck_year_sd": 9.642795320860033,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "preventive",
+        "bays": 4,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 756.5,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 3782.5,
+        "cost": 7338050.0,
+        "slots_used": 756.5,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 293.522,
+        "breakdowns_per_100_truck_years": 3.026,
+        "downtime_days_per_truck_year": 0.15130000000000002,
+        "utilization": 0.07274038461538461,
+        "cost_per_truck_year_sd": 9.642795320860033,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "predictive",
+        "bays": 4,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 648.3,
+        "replacements": 108.3,
+        "inspections": 9641.4,
+        "downtime_days": 5706.0,
+        "cost": 9912090.0,
+        "slots_used": 10398.0,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 396.4836,
+        "breakdowns_per_100_truck_years": 2.5932000000000004,
+        "downtime_days_per_truck_year": 0.22824,
+        "utilization": 0.9998076923076923,
+        "cost_per_truck_year_sd": 8.976054046183112,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "oracle",
+        "bays": 4,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 0.6,
+        "replacements": 786.2,
+        "inspections": 0.0,
+        "downtime_days": 396.1,
+        "cost": 1814080.0,
+        "slots_used": 786.8,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 10400.0,
+        "cost_per_truck_year": 72.56320000000001,
+        "breakdowns_per_100_truck_years": 0.0024000000000000002,
+        "downtime_days_per_truck_year": 0.015843999999999997,
+        "utilization": 0.07565384615384615,
+        "cost_per_truck_year_sd": 2.4268991243972233,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "corrective",
+        "bays": 5,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 756.5,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 3782.5,
+        "cost": 7338050.0,
+        "slots_used": 756.5,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 293.522,
+        "breakdowns_per_100_truck_years": 3.026,
+        "downtime_days_per_truck_year": 0.15130000000000002,
+        "utilization": 0.058192307692307696,
+        "cost_per_truck_year_sd": 9.642795320860033,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "preventive",
+        "bays": 5,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 756.5,
+        "replacements": 0.0,
+        "inspections": 0.0,
+        "downtime_days": 3782.5,
+        "cost": 7338050.0,
+        "slots_used": 756.5,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 293.522,
+        "breakdowns_per_100_truck_years": 3.026,
+        "downtime_days_per_truck_year": 0.15130000000000002,
+        "utilization": 0.058192307692307696,
+        "cost_per_truck_year_sd": 9.642795320860033,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "predictive",
+        "bays": 5,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 622.7,
+        "replacements": 136.0,
+        "inspections": 12147.9,
+        "downtime_days": 6218.475,
+        "cost": 10604755.0,
+        "slots_used": 12906.6,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 424.1902,
+        "breakdowns_per_100_truck_years": 2.4907999999999997,
+        "downtime_days_per_truck_year": 0.248739,
+        "utilization": 0.9928153846153845,
+        "cost_per_truck_year_sd": 8.397864845304435,
+        "fleet": "renouvel\u00e9e"
+      },
+      {
+        "policy": "oracle",
+        "bays": 5,
+        "fleet_age_shift": -100,
+        "interval": 700,
+        "breakdowns": 0.6,
+        "replacements": 786.2,
+        "inspections": 0.0,
+        "downtime_days": 396.1,
+        "cost": 1814080.0,
+        "slots_used": 786.8,
+        "waiting_breakdown_weeks": 0.0,
+        "slots_capacity": 13000.0,
+        "cost_per_truck_year": 72.56320000000001,
+        "breakdowns_per_100_truck_years": 0.0024000000000000002,
+        "downtime_days_per_truck_year": 0.015843999999999997,
+        "utilization": 0.06052307692307692,
+        "cost_per_truck_year_sd": 2.4268991243972233,
+        "fleet": "renouvel\u00e9e"
+      }
+    ],
+    "business_case": {
+      "reference_policy": "corrective",
+      "cost_per_truck_year": {
+        "corrective": 421.9112,
+        "preventive": 422.22200000000004,
+        "predictive": 482.44480000000004,
+        "oracle": 104.6584
+      },
+      "annual_net_saving": -552668.0000000002,
+      "payback_months": null,
+      "oracle_net_saving": 1336264.0,
+      "best_threshold_annual_net_saving": -315431.5,
+      "best_threshold_payback_months": null
+    },
+    "extra_bay": {
+      "cost_per_truck_year_by_bays": {
+        "3": 482.44480000000004,
+        "4": 503.79440000000005,
+        "5": 533.6611999999999
+      },
+      "annual_net_gain_4_bays": -166748.00000000006,
+      "payback_months": null
+    },
+    "threshold_curve": [
+      {
+        "threshold": 0.04516129032258064,
+        "recall": 0.2631578947368421,
+        "weekly_false_alarm": 0.011878897965170549,
+        "cost_per_truck_year": 493.231,
+        "net_saving_per_truck_year": -121.31979999999999
+      },
+      {
+        "threshold": 0.075,
+        "recall": 0.05263157894736842,
+        "weekly_false_alarm": 0.0007947150047121141,
+        "cost_per_truck_year": 435.0075,
+        "net_saving_per_truck_year": -63.096299999999985
+      },
+      {
+        "threshold": 0.1,
+        "recall": 0.013157894736842105,
+        "weekly_false_alarm": 0.0002927897385781473,
+        "cost_per_truck_year": 438.171,
+        "net_saving_per_truck_year": -66.25979999999998
+      },
+      {
+        "threshold": 0.15,
+        "recall": 0.013157894736842105,
+        "weekly_false_alarm": 0.0002927897385781473,
+        "cost_per_truck_year": 438.171,
+        "net_saving_per_truck_year": -66.25979999999998
+      },
+      {
+        "threshold": 0.2,
+        "recall": 0.013157894736842105,
+        "weekly_false_alarm": 0.00025096263306698347,
+        "cost_per_truck_year": 434.9975,
+        "net_saving_per_truck_year": -63.086299999999994
+      },
+      {
+        "threshold": 0.3,
+        "recall": 0.013157894736842105,
+        "weekly_false_alarm": 0.00016730842204465562,
+        "cost_per_truck_year": 437.9275,
+        "net_saving_per_truck_year": -66.0163
+      }
+    ],
+    "best_threshold": {
+      "threshold": 0.2,
+      "recall": 0.013157894736842105,
+      "weekly_false_alarm": 0.00025096263306698347,
+      "cost_per_truck_year": 434.9975,
+      "net_saving_per_truck_year": -63.086299999999994
+    },
+    "performance_grid": {
+      "recalls": [
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "weekly_false_alarms": [
+        0.0,
+        0.001,
+        0.0025,
+        0.005,
+        0.01,
+        0.02
+      ],
+      "net_saving_per_truck_year": [
+        [
+          -35.37013333333334,
+          -58.81813333333338,
+          -81.8501333333333,
+          -121.67346666666668,
+          -147.33146666666664,
+          -149.7661333333332
+        ],
+        [
+          10.109866666666676,
+          -12.404133333333277,
+          -42.34746666666666,
+          -82.15613333333334,
+          -114.57813333333337,
+          -141.04813333333334
+        ],
+        [
+          77.63253333333336,
+          52.44920000000002,
+          35.17853333333335,
+          -13.249466666666649,
+          -73.40879999999999,
+          -116.21013333333332
+        ],
+        [
+          160.0912,
+          143.15453333333335,
+          109.31586666666675,
+          73.77653333333336,
+          -25.630133333333333,
+          -85.65546666666665
+        ],
+        [
+          262.7672,
+          244.70986666666664,
+          218.6732,
+          179.14720000000003,
+          158.9218666666667,
+          96.88719999999995
+        ]
+      ]
+    },
+    "breakdown_cost_sensitivity": [
+      {
+        "multiplier": 0.5,
+        "breakdown_cost": 4850.0,
+        "corrective": 210.9556,
+        "preventive": 211.28580000000002,
+        "predictive": 293.6634,
+        "oracle": 103.86300000000001,
+        "predictive_net_vs_best": -132.70780000000002
+      },
+      {
+        "multiplier": 0.75,
+        "breakdown_cost": 7275.0,
+        "corrective": 316.43340000000006,
+        "preventive": 316.75390000000004,
+        "predictive": 388.0541,
+        "oracle": 104.26070000000001,
+        "predictive_net_vs_best": -121.62069999999994
+      },
+      {
+        "multiplier": 1.0,
+        "breakdown_cost": 9700.0,
+        "corrective": 421.9112,
+        "preventive": 422.22200000000004,
+        "predictive": 482.44480000000004,
+        "oracle": 104.65840000000001,
+        "predictive_net_vs_best": -110.53360000000004
+      },
+      {
+        "multiplier": 1.25,
+        "breakdown_cost": 12125.0,
+        "corrective": 527.3890000000001,
+        "preventive": 527.6901,
+        "predictive": 576.8355,
+        "oracle": 105.05610000000001,
+        "predictive_net_vs_best": -99.4464999999999
+      },
+      {
+        "multiplier": 1.5,
+        "breakdown_cost": 14550.0,
+        "corrective": 632.8668000000001,
+        "preventive": 633.1582000000001,
+        "predictive": 671.2262000000001,
+        "oracle": 105.45380000000002,
+        "predictive_net_vs_best": -88.35939999999994
+      },
+      {
+        "multiplier": 2.0,
+        "breakdown_cost": 19400.0,
+        "corrective": 843.8224,
+        "preventive": 844.0944000000001,
+        "predictive": 860.0076,
+        "oracle": 106.2492,
+        "predictive_net_vs_best": -66.18520000000001
+      }
+    ]
+  },
+  "tactical": {
+    "parts": {
+      "horizon_weeks": 6,
+      "expected_demand": 55.171734904177725,
+      "critical_ratio": 0.9900376355988488,
+      "cost_under": 4300,
+      "cost_over": 43.26923076923077,
+      "optimal_stock": 73,
+      "table": [
+        {
+          "stock": 67,
+          "service": 0.950460558368714,
+          "ruptures_attendues": 0.18980206573394814,
+          "cout_attendu": 1336.1614040694676
+        },
+        {
+          "stock": 68,
+          "service": 0.9622064033913009,
+          "ruptures_attendues": 0.14026262410266233,
+          "cout_attendu": 1164.2675022920462
+        },
+        {
+          "stock": 69,
+          "service": 0.971533294180948,
+          "ruptures_attendues": 0.10246902749396347,
+          "cout_attendu": 1043.388967790611
+        },
+        {
+          "stock": 70,
+          "service": 0.9788297282810026,
+          "ruptures_attendues": 0.07400232167491168,
+          "cout_attendu": 963.0196310745946
+        },
+        {
+          "stock": 71,
+          "service": 0.9844543680002417,
+          "ruptures_attendues": 0.052832049955914395,
+          "cout_attendu": 914.3406720796805
+        },
+        {
+          "stock": 72,
+          "service": 0.9887277888501701,
+          "ruptures_attendues": 0.0372864179561562,
+          "cout_attendu": 890.0910377115001
+        },
+        {
+          "stock": 73,
+          "service": 0.9919284358934614,
+          "ruptures_attendues": 0.026014206806326462,
+          "cout_attendu": 884.4020206309414
+        },
+        {
+          "stock": 74,
+          "service": 0.9942919763245859,
+          "ruptures_attendues": 0.01794264269978802,
+          "cout_attendu": 892.6142753720626
+        },
+        {
+          "stock": 75,
+          "service": 0.9960131757488838,
+          "ruptures_attendues": 0.012234619024374135,
+          "cout_attendu": 911.0920225433658
+        },
+        {
+          "stock": 76,
+          "service": 0.997249464502067,
+          "ruptures_attendues": 0.008247794773258217,
+          "cout_attendu": 937.0454022142402
+        },
+        {
+          "stock": 77,
+          "service": 0.9981254660115837,
+          "ruptures_attendues": 0.005497259275325435,
+          "cout_attendu": 968.368316787161
+        },
+        {
+          "stock": 78,
+          "service": 0.9987379005766868,
+          "ruptures_attendues": 0.003622725286909336,
+          "cout_attendu": 1003.4959417624729
+        },
+        {
+          "stock": 79,
+          "service": 0.9991604293187983,
+          "ruptures_attendues": 0.002360625863596289,
+          "cout_attendu": 1041.283534940257
+        }
+      ],
+      "p90": 65,
+      "p99": 73
+    },
+    "staffing": [
+      {
+        "semaine": 1,
+        "remplacements_attendus": 10.694923432133264,
+        "remplacements_q95": 16,
+        "heures": 146.29461538461538,
+        "techniciens": 5
+      },
+      {
+        "semaine": 2,
+        "remplacements_attendus": 10.176902069795512,
+        "remplacements_q95": 16,
+        "heures": 146.29461538461538,
+        "techniciens": 5
+      },
+      {
+        "semaine": 3,
+        "remplacements_attendus": 8.475578442687148,
+        "remplacements_q95": 13,
+        "heures": 135.79461538461538,
+        "techniciens": 4
+      },
+      {
+        "semaine": 4,
+        "remplacements_attendus": 8.129704966227527,
+        "remplacements_q95": 13,
+        "heures": 135.79461538461538,
+        "techniciens": 4
+      },
+      {
+        "semaine": 5,
+        "remplacements_attendus": 9.170712415555307,
+        "remplacements_q95": 14,
+        "heures": 139.29461538461538,
+        "techniciens": 4
+      },
+      {
+        "semaine": 6,
+        "remplacements_attendus": 9.219013872583457,
+        "remplacements_q95": 14,
+        "heures": 139.29461538461538,
+        "techniciens": 4
+      },
+      {
+        "semaine": 7,
+        "remplacements_attendus": 7.7136882044388315,
+        "remplacements_q95": 13,
+        "heures": 135.79461538461538,
+        "techniciens": 4
+      },
+      {
+        "semaine": 8,
+        "remplacements_attendus": 7.743350067177959,
+        "remplacements_q95": 13,
+        "heures": 135.79461538461538,
+        "techniciens": 4
+      },
+      {
+        "semaine": 9,
+        "remplacements_attendus": 7.922724983707592,
+        "remplacements_q95": 13,
+        "heures": 135.79461538461538,
+        "techniciens": 4
+      },
+      {
+        "semaine": 10,
+        "remplacements_attendus": 7.950175849686925,
+        "remplacements_q95": 13,
+        "heures": 135.79461538461538,
+        "techniciens": 4
+      },
+      {
+        "semaine": 11,
+        "remplacements_attendus": 7.977968768822191,
+        "remplacements_q95": 13,
+        "heures": 135.79461538461538,
+        "techniciens": 4
+      },
+      {
+        "semaine": 12,
+        "remplacements_attendus": 8.006114373505369,
+        "remplacements_q95": 13,
+        "heures": 135.79461538461538,
+        "techniciens": 4
+      }
+    ],
+    "alarms_per_week": 25.798461538461538
+  }
+}

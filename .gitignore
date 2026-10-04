@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+mlruns/
+
+# Données : téléchargées par `make data`, jamais versionnées
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+
+# Fichiers temporaires Word
+~$*.docx
+
+# Node (génération des documents Word)
+docs/node_modules/
+
+# Modèles entraînés (régénérés par make train)
+models/
+mlflow.db
+
+# Journaux d'exécution
+reports/*.log
