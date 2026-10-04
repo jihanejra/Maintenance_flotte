@@ -24,3 +24,8 @@ mlflow.db
 
 # Journaux d'exécution
 reports/*.log
+
+# Artefacts d'installation Python
+*.egg-info/
+build/
+dist/
